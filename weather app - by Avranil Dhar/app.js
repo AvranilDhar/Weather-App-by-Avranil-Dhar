@@ -13,7 +13,6 @@ form.addEventListener('submit', async (event) => {
     }
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${search.value.trim()}&appid=${apiKey}&units=${unit}`;
     await getData(url);
-    search.value = '';
 });
 
 document.querySelectorAll('input[name="unit"]').forEach(radio => {
