@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app - by Avranil Dhar</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/sunrise.svg" type="image/x-icon">
+</head>
+<body>
+
+    <section class="container">
+        <section class="section1 card flex" style="grid-area: sec1;">
+            <form class="input-form" autocomplete="off">
+                <input type="text" name="search" id="search" placeholder="Search for places ..." aria-label="Search for places">
+                <button><img src="assets/icons8-search.gif" alt="search"></button>
+                
+            </form>
+            
+            <section class="unit">
+                <!-- <span>Select Temperature Unit:</span> -->
+                <input type="radio" name="unit"   id="metric"  value="metric" checked>
+                <label for="metric"><sup>o</sup>C</label>
+                <span>/</span>
+                <input type="radio" name="unit" value="imperial" id="imperial">
+                <label for="imperial"><sup>o</sup>F</label>
+            </section>
+            <hr/>
+            <section class="flex">
+                <img src="" class="temp-img">
+                <span class="description"></span>
+                <spaan class="temperature"></spaan>
+                <span class="feels-like"></span>
+            </section>
+
+            <hr/>
+            <section class="flex">
+                <img src="assets/icons8-location.gif" alt="location" class="location-img">
+                <span class="place"></span>
+                <span class="day-time"></span>
+            </section>
+        </section>
+        <section class="section2 card" style="grid-area: sec2;">
+            <img src="assets/wind-solid.svg" alt="wind" class="card-img">
+            <section class="wind-parameters-parent">
+                <section class="wind-parameters">
+                    <span>Air Pressure</span>
+                    <span class="pressure"></span>
+                </section>
+                <hr style="width: 100%;">
+                <section class="wind-parameters">
+                    <span>Wind Speed</span>
+                    <span class="wind-speed"></span>
+                </section>
+                <hr style="width: 100%;">
+                <section class="wind-parameters">
+                    <span>Wind Direction</span>
+                    <span class="wind-direction"></span>
+                </section>
+                <hr style="width: 100%;">
+                <section class="wind-parameters">
+                    <span>Wind Gust</span>
+                    <span class="wind-gust"></span>
+                </section>
+                <section></section>
+            </section>
+        </section>
+
+
+        <section class="section3 card" style="grid-area: sec3; flex-direction: row;">
+            <section class="flex">
+                <img src="assets/sunrise.svg" alt="sunrise" class="card-img">
+                <span>Sunrise</span>
+                <span class="sunrise"></span>
+            </section>
+            <section class="flex">
+                <img src="assets/sunset-.svg" alt="sunset" class="card-img">
+                <span>Sunrise</span>
+                <span class="sunset"></span>
+            </section>
+        </section>
+        <section class="section4 card flex" style="grid-area: sec4;">
+            <h2 class="aqi"></h2>
+            <hr/>
+            <section class="aqi-parameters-parent">
+                <section class="aqi-parameters">
+                    <span>Concentration of CO</span>
+                    <span class="carbon-monoxide"></span>
+                </section>
+                <hr style="width: 100%;">
+                <section class="aqi-parameters">
+                    <span>Concentration of NO</span>
+                    <span class="nitrogen-monoxide"></span>
+                </section>
+                <hr style="width: 100%;">
+                <section class="aqi-parameters">
+                    <span>Concentration of NO2</span>
+                    <span class="nitrogen-dioxide"></span>
+                </section>
+                <hr style="width: 100%;">
+                <section class="aqi-parameters">
+                    <span>Concentration of O3</span>
+                    <span class="ozone"></span>
+                </section>
+                <hr style="width: 100%;">
+                <section class="aqi-parameters">
+                    <span>Concentration of SO2</span>
+                    <span class="sulphur-dioxide"> </span>
+                </section>
+                <hr style="width: 100%;">
+                <section class="aqi-parameters">
+                    <span>Concentration of PM2.5</span>
+                    <span class="fine-particles"></span>
+                </section>
+                <hr style="width: 100%;">
+                <section class="aqi-parameters">
+                    <span>Concentration of PM10</span>
+                    <span class="coarse-particulate-matter"></span>
+                </section>
+                <hr style="width: 100%;">
+                <section class="aqi-parameters">
+                    <span>Concentration of NH3</span>
+                    <span class="ammonia"></span>
+                </section>
+            </section>
+        </section>
+        <section class="section5 card flex" style="grid-area: sec5;">
+            <img src="assets/humidity.svg" alt="logo" class="card-img">
+            <span class="heading">Humidiy</span>
+            <span class="humidity"></span>
+        </section>
+        <section class="section6 card flex" style="grid-area: sec6;">
+                <img src="assets/eye-slash-solid.svg" alt="logo" class="card-img">
+                <span class="heading">Visibility</span>
+                <span class="visibility"></span>
+        </section>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
